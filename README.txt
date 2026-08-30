@@ -1,18 +1,21 @@
-Schuster-style GitHub Pages site
+Faithful sidebar-style academic site
 
-Replace the files in the root of your USERNAME.github.io repository with:
+Upload/replace these in the root of your USERNAME.github.io repository:
 
 index.html
 research.html
+publications.html
 style.css
 
-This version deliberately follows the visual language of Thomas Schuster's website:
-- narrow centered text column
-- Georgia/Times-style serif typography
-- large bold name at the top
-- plain bulleted navigation
-- blue underlined links
-- minimal/no decorative header
-- compact academic-page spacing
+Keep your existing profile.jpg in the root too.
 
-Commit directly to main. GitHub Pages may take a short time to redeploy.
+This version has:
+- fixed charcoal/black left sidebar
+- portrait inside sidebar
+- name and affiliation below portrait
+- search field
+- About / Research / Publications navigation
+- white main content pane on the right
+- responsive mobile layout
+
+Commit directly to main.

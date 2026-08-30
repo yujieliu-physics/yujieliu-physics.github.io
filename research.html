@@ -7,15 +7,34 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrapper">
-    <div class="site-name">Yu-Jie Liu</div>
 
-    <ul class="nav">
-      <li><a href="index.html">About</a></li>
-      <li><a href="research.html">Research</a></li>
-    </ul>
+<aside class="sidebar">
+  <img class="profile-photo" src="profile.jpg" alt="Yu-Jie Liu">
 
-    <h1 class="page-title">Research</h1>
+  <div class="sidebar-name">Yu-Jie Liu</div>
+  <p class="sidebar-subtitle">
+    Postdoctoral Associate<br>
+    MIT Center for Theoretical Physics
+  </p>
+
+  <form class="site-search" onsubmit="return false;">
+    <input id="site-search-input" type="search" placeholder="Search" aria-label="Search this site">
+  </form>
+
+  <ul class="sidebar-nav">
+    <li><a href="index.html" class="">About</a></li>
+    <li><a href="research.html" class="active">Research</a></li>
+    <li><a href="publications.html" class="">Publications</a></li>
+  </ul>
+
+  <div class="sidebar-links">
+    <a href="mailto:yujieliu@mit.edu">Email</a>
+  </div>
+</aside>
+
+<div class="main">
+  <main class="content">
+    <h1>Research</h1>
 
     <p>
       I am interested in information-theoretic and computational perspectives
@@ -29,21 +48,42 @@
     </p>
 
     <h4>Quantum simulation</h4>
-    <p>
-      Quantum simulation of exotic quantum matter and protocols for diagnosing
-      many-body phases on quantum devices.
-    </p>
+    <p>Quantum simulation of exotic quantum matter.</p>
 
     <h4>Open quantum systems</h4>
     <p>
-      Dissipative phases of matter, quantum channels, and their connections to
-      passive quantum error correction and robust information storage.
+      Dissipative phases of matter and their implications for passive quantum
+      error correction.
     </p>
 
     <h4>Quantum sensing</h4>
     <p>
-      Fundamental limits and computational approaches to quantum sensing and spectroscopy.
+      Fundamental theory of quantum computational sensing and its practicality.
     </p>
-  </div>
-</body>
-</html>
+  </main>
+</div>
+
+<script>
+const input = document.getElementById('site-search-input');
+if (input) {
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      const q = input.value.trim().toLowerCase();
+      if (!q) return;
+      if (q.includes('research')) window.location.href = 'research.html';
+      else if (q.includes('publication') || q.includes('paper')) window.location.href = 'publications.html';
+      else if (q.includes('about') || q.includes('bio') || q.includes('contact')) window.location.href = 'index.html';
+      else {
+        const el = Array.from(document.querySelectorAll('main *')).find(
+          x => x.children.length === 0 && x.textContent.toLowerCase().includes(q)
+        );
+        if (el) {
+          el.scrollIntoView({behavior:'smooth', block:'center'});
+        }
+      }
+    }
+  });
+}
+</script>
+</body></html>
