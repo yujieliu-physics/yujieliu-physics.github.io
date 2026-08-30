@@ -5,7 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yu-Jie Liu – Publications</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .publication-list {
+      box-sizing: border-box;
+      max-width: 960px;
+      margin: 0;
+      padding: 0;
+      color: #202124;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    .publication-key {
+      margin: 0 0 20px;
+      color: #5f6368;
+      font-size: 14px;
+    }
+
+    .publication-intro {
+      margin: 0 0 10px;
+    }
+
+    .publication-list ol {
+      margin: 0;
+      padding-left: 2.1rem;
+    }
+
+    .publication-list li {
+      margin: 0 0 24px;
+      padding-left: 0.45rem;
+    }
+
+    .publication-title {
+      display: block;
+      margin-bottom: 3px;
+      color: #202124;
+      font-weight: 700;
+    }
+
+    .publication-authors,
+    .publication-venue {
+      display: block;
+    }
+
+    .publication-venue {
+      margin-top: 3px;
+    }
+
+    .publication-list .me {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    .publication-list sup {
+      font-size: 0.72em;
+      line-height: 0;
+    }
+
+    .publication-list a {
+      text-decoration: none;
+    }
+
+    .publication-list a:hover,
+    .publication-list a:focus {
+      text-decoration: underline;
+    }
+
+    .publication-link {
+      color: #1a73e8;
+    }
+
+    .talk-link {
+      color: #d93025;
+      font-weight: 600;
+    }
+
+    .publication-notes {
+      margin: 6px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .publication-notes li {
+      margin: 2px 0;
+      padding: 0 0 0 1.15em;
+      position: relative;
+    }
+
+    .publication-notes li::before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+    }
+
+    @media (max-width: 600px) {
+      .publication-list {
+        font-size: 15px;
+      }
+
+      .publication-list ol {
+        padding-left: 1.7rem;
+      }
+
+      .publication-list li {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
 <aside class="sidebar">
@@ -22,34 +133,162 @@
   </form>
 
   <ul class="sidebar-nav">
-    <li><a href="index.html" class="">About</a></li>
-    <li><a href="research.html" class="">Research</a></li>
+    <li><a href="index.html">About</a></li>
+    <li><a href="research.html">Research</a></li>
     <li><a href="publications.html" class="active">Publications</a></li>
   </ul>
-
 </aside>
 
 <div class="main">
   <main class="content">
-    <h1>Publications &amp; Preprints</h1>
+    <h1>Publications</h1>
 
-    <p>
-      Add your publication list here. This page is styled to support the same
-      compact numbered-paper format as the reference site.
-    </p>
+<div class="publication-list" role="region" aria-label="Publications">
+  <p class="publication-intro">
+    My latest publications can also be found on
+    <a class="publication-link" href="http://arxiv.org/a/liu_y_32" target="_blank" rel="noopener noreferrer">arXiv</a>.
+  </p>
 
-    <ol class="publications">
-      <li>
-        <span class="paper-title">Paper title</span><br>
-        Yu-Jie Liu, collaborators,<br>
-        <a href="#">arXiv / Journal link</a>.
-      </li>
-      <li>
-        <span class="paper-title">Paper title</span><br>
-        Yu-Jie Liu, collaborators,<br>
-        <a href="#">arXiv / Journal link</a>.
-      </li>
-    </ol>
+  <p class="publication-key">
+    <sup>*</sup> Equally contributed. <sup>&dagger;</sup> Corresponding authors.
+  </p>
+
+  <ol>
+    <li>
+      <span class="publication-title">Optimal Spectroscopy via Quantum Sensing</span>
+      <span class="publication-authors"><span class="me">Yu-Jie Liu</span>, et al.</span>
+      <span class="publication-venue">To appear</span>
+    </li>
+
+    <li>
+      <span class="publication-title">Lieb-Schultz-Mattis Constraints for Quantum Channels: A Spacetime-Duality View</span>
+      <span class="publication-authors">Tsung-Cheng Lu<sup>*</sup>, <span class="me">Yu-Jie Liu</span><sup>*</sup>, Frank Pollmann, Sarang Gopalakrishnan, Yizhi You</span>
+      <span class="publication-venue">To appear on arXiv</span>
+    </li>
+
+    <li>
+      <span class="publication-title">Computationally protected quantum phases of matter</span>
+      <span class="publication-authors"><span class="me">Yu-Jie Liu</span>, Xiao-Gang Wen, Hannes Pichler, Soonwon Choi</span>
+      <span class="publication-venue">To appear on arXiv</span>
+    </li>
+
+    <li>
+      <span class="publication-title">Digital dissipative state preparation for frustration-free gapless quantum systems</span>
+      <span class="publication-authors">Johannes Feldmier<sup>*</sup>, <span class="me">Yu-Jie Liu</span><sup>*</sup>, Mikhail D. Lukin, Soonwon Choi</span>
+      <span class="publication-venue">arXiv preprint arXiv:2603.10119 (2026)</span>
+    </li>
+
+    <li>
+      <span class="publication-title">Holographic duality between bulk topological order and boundary mixed-state order</span>
+      <span class="publication-authors">Tsung-Cheng Lu<sup>&dagger;</sup>, <span class="me">Yu-Jie Liu</span><sup>&dagger;</sup>, Sarang Gopalakrishnan<sup>&dagger;</sup>, Yizhi You<sup>&dagger;</sup></span>
+      <span class="publication-venue">PRX Quantum</span>
+      <ul class="publication-notes">
+        <li>See an invited talk by Yizhi You at Stanford University [<a class="talk-link" href="https://www.youtube.com/watch?v=6I8Eoc5Vv6o" target="_blank" rel="noopener noreferrer">Link</a>].</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="publication-title">Skeleton of isometric Tensor Network States for Abelian String-Net Models</span>
+      <span class="publication-authors">Julian Boesl, <span class="me">Yu-Jie Liu</span>, Frank Pollmann, Michael Knap</span>
+      <span class="publication-venue"><a class="publication-link" href="https://journals.aps.org/prl/abstract/10.1103/d3fz-5755" target="_blank" rel="noopener noreferrer">Physical Review Letters 137, 020405 (2026)</a></span>
+    </li>
+
+    <li>
+      <span class="publication-title">Quantum Phase Transitions between Symmetry-Enriched Fracton Phases</span>
+      <span class="publication-authors">Julian Boesl, <span class="me">Yu-Jie Liu</span>, Wen-Tao Xu, Frank Pollmann, Michael Knap</span>
+      <span class="publication-venue"><a class="publication-link" href="https://journals.aps.org/prb/abstract/10.1103/fsr8-xd4n" target="_blank" rel="noopener noreferrer">Physical Review B 112, 125152 (2025)</a></span>
+      <ul class="publication-notes"><li>Editors' Suggestion.</li></ul>
+    </li>
+
+    <li>
+      <span class="publication-title">Bounds on Autonomous Quantum Error Correction</span>
+      <span class="publication-authors">Oles Shtanko<sup>*</sup>, <span class="me">Yu-Jie Liu</span><sup>*</sup>, Simon Lieu, Alexey V. Gorshkov, Victor V. Albert</span>
+      <span class="publication-venue"><a class="publication-link" href="https://quantum-journal.org/papers/q-2025-07-22-1804/" target="_blank" rel="noopener noreferrer">Quantum 9, 1804 (2025)</a></span>
+    </li>
+
+    <li>
+      <span class="publication-title">Information-theoretic principle of emergent 1-form symmetries</span>
+      <span class="publication-authors"><span class="me">Yu-Jie Liu</span><sup>*</sup>, Wen-Tao Xu<sup>*</sup>, Frank Pollmann, Michael Knap</span>
+      <span class="publication-venue"><a class="publication-link" href="https://arxiv.org/abs/2502.17572" target="_blank" rel="noopener noreferrer">arXiv preprint arXiv:2502.17572 (2025)</a></span>
+      <ul class="publication-notes">
+        <li>See an invited talk by Michael Knap at ICTS [<a class="talk-link" href="https://www.youtube.com/watch?v=biI4-jaYB5U" target="_blank" rel="noopener noreferrer">Link</a>].</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="publication-title">Simulating two-dimensional topological quantum phase transitions on a digital quantum computer</span>
+      <span class="publication-authors"><span class="me">Yu-Jie Liu</span>, Kirill Shtengel, Frank Pollmann</span>
+      <span class="publication-venue"><a class="publication-link" href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.6.043256" target="_blank" rel="noopener noreferrer">Phys. Rev. Research 6, 043256 (2024)</a></span>
+      <ul class="publication-notes">
+        <li>See an invited talk I gave at the Perimeter Institute of Theoretical Physics [<a class="talk-link" href="https://pirsa.org/speaker/yu-jie-liu" target="_blank" rel="noopener noreferrer">Link</a>].</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="publication-title">Candidate for a Passively Protected Quantum Memory in Two Dimensions</span>
+      <span class="publication-authors">Simon Lieu<sup>*</sup>, <span class="me">Yu-Jie Liu</span><sup>*</sup>, Alexey V. Gorshkov</span>
+      <span class="publication-venue"><a class="publication-link" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.133.030601" target="_blank" rel="noopener noreferrer">Physical Review Letters 133, 030601 (2024)</a></span>
+      <ul class="publication-notes">
+        <li>U.S. Provisional Patent Application 63/467705.</li>
+        <li>See invited talks by Alexey Gorshkov at the QuIST Webinar Series [<a class="talk-link" href="https://www.koushare.com/live/details/11395" target="_blank" rel="noopener noreferrer">Link</a>] and Qiskit seminar [<a class="talk-link" href="https://www.youtube.com/watch?v=NhQnY_P9IE4&amp;ab_channel=Qiskit" target="_blank" rel="noopener noreferrer">Link</a>].</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="publication-title">Dissipative Phase Transitions and Passive Error Correction</span>
+      <span class="publication-authors"><span class="me">Yu-Jie Liu</span>, Simon Lieu</span>
+      <span class="publication-venue"><a class="publication-link" href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.109.022422" target="_blank" rel="noopener noreferrer">Physical Review A 109 (2), 022422 (2024)</a></span>
+    </li>
+
+    <li>
+      <span class="publication-title">Quantum phase transition between symmetry enriched topological phases in tensor-network states</span>
+      <span class="publication-authors">Lukas Haller<sup>*</sup>, Wen-Tao Xu<sup>*</sup>, <span class="me">Yu-Jie Liu</span>, Frank Pollmann</span>
+      <span class="publication-venue"><a class="publication-link" href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.5.043078" target="_blank" rel="noopener noreferrer">Phys. Rev. Research 5, 043078 (2023)</a></span>
+    </li>
+
+    <li>
+      <span class="publication-title">Model-Independent Learning of Quantum Phases of Matter with Quantum Convolutional Neural Networks</span>
+      <span class="publication-authors"><span class="me">Yu-Jie Liu</span>, Adam Smith, Michael Knap, Frank Pollmann</span>
+      <span class="publication-venue"><a class="publication-link" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.130.220603" target="_blank" rel="noopener noreferrer">Physical Review Letters 130 (22), 220603 (2023)</a></span>
+      <ul class="publication-notes">
+        <li>See an invited talk I gave at CERN Quantum Initiative [<a class="talk-link" href="https://drive.google.com/file/d/18HQMPPaBEpFks5VeOqzGF2VBHcPZVmF9/view" target="_blank" rel="noopener noreferrer">Link</a>].</li>
+        <li>See another invited talk I gave at CQT, National University of Singapore [<a class="talk-link" href="https://www.youtube.com/watch?v=DoOmWnhO5Ro" target="_blank" rel="noopener noreferrer">Link</a>].</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="publication-title">Methods for Simulating String-Net States and Anyons on a Digital Quantum Computer</span>
+      <span class="publication-authors"><span class="me">Yu-Jie Liu</span><sup>&dagger;</sup>, Kirill Shtengel, Adam Smith, Frank Pollmann</span>
+      <span class="publication-venue"><a class="publication-link" href="https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.3.040315" target="_blank" rel="noopener noreferrer">PRX Quantum 3, 040315 (2022)</a></span>
+      <ul class="publication-notes"><li>Invited talk in APS March Meeting 2025.</li></ul>
+    </li>
+
+    <li>
+      <span class="publication-title">Data Compression for Quantum Machine Learning</span>
+      <span class="publication-authors">Rohit Dilip, <span class="me">Yu-Jie Liu</span>, Adam Smith, Frank Pollmann</span>
+      <span class="publication-venue"><a class="publication-link" href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.043007" target="_blank" rel="noopener noreferrer">Phys. Rev. Research 4, 043007 (2022)</a></span>
+    </li>
+
+    <li>
+      <span class="publication-title">Realizing topologically ordered states on a quantum processor</span>
+      <span class="publication-authors">Kevin Satzinger, <span class="me">Yu-Jie Liu</span>, Adam Smith et al.</span>
+      <span class="publication-venue"><a class="publication-link" href="https://www.science.org/doi/10.1126/science.abi8378" target="_blank" rel="noopener noreferrer">Science 374 (6572), 1237&ndash;1241 (2021)</a></span>
+      <ul class="publication-notes">
+        <li>I am the leading co-author in the theory group.</li>
+        <li>See Perspective in Science [<a class="talk-link" href="https://www.science.org/doi/10.1126/science.abl8910" target="_blank" rel="noopener noreferrer">Link</a>].</li>
+        <li>See articles in Phys.org [<a class="talk-link" href="https://phys.org/news/2021-12-scientists-quantum-processor-simulate-2d.html" target="_blank" rel="noopener noreferrer">Link</a>], Science Daily [<a class="talk-link" href="https://www.sciencedaily.com/releases/2021/12/211202153927.htm" target="_blank" rel="noopener noreferrer">Link</a>], and Physics World [<a class="talk-link" href="https://physicsworld.com/a/long-range-quantum-entanglement-measured-at-last/" target="_blank" rel="noopener noreferrer">Link</a>].</li>
+        <li>See an invited talk given by Frank Pollmann [<a class="talk-link" href="https://www.youtube.com/watch?v=VeH6gVBnVuo" target="_blank" rel="noopener noreferrer">Link</a>].</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="publication-title">Transitions in Synchronization States of Model Cilia through Basal-Connection Coupling</span>
+      <span class="publication-authors"><span class="me">Yu-Jie Liu</span>, Rory Claydon, Marco Polin, Douglas R. Brumley</span>
+      <span class="publication-venue"><a class="publication-link" href="https://royalsocietypublishing.org/rsif/article/15/147/20180450/35946" target="_blank" rel="noopener noreferrer">Journal of The Royal Society Interface 15 (147), 20180450 (2018)</a></span>
+    </li>
+  </ol>
+</div>
+
   </main>
 </div>
 
@@ -76,4 +315,6 @@ if (input) {
   });
 }
 </script>
-</body></html>
+
+</body>
+</html>
