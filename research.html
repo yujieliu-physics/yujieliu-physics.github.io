@@ -1,47 +1,156 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WERB67WK6W"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-WERB67WK6W');
-  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yu-Jie Liu – Research</title>
+  <title>Research | Yu-Jie Liu</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .talk-list {
+      max-width: 960px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+    .talk-list ul { margin: 0; padding-left: 1.25rem; }
+    .talk-list > ul > li { margin-bottom: 18px; padding-left: 0.2rem; }
+    .talk-title { display: block; font-weight: 600; }
+    .talk-date, .talk-venue { display: block; }
+    @media (max-width: 600px) {
+      .talk-list { font-size: 15px; }
+      .talk-list > ul > li { margin-bottom: 16px; }
+    }
+  </style>
 </head>
 <body>
 
 <aside class="sidebar">
   <img class="profile-photo" src="profile.jpg" alt="Yu-Jie Liu">
-
   <div class="sidebar-name">Yu-Jie Liu</div>
   <p class="sidebar-subtitle">
     Postdoctoral Associate<br>
     MIT Center for Theoretical Physics
   </p>
-
-
+  <form class="site-search" onsubmit="return false;">
+    <input id="site-search-input" type="search" placeholder="Search" aria-label="Search this site">
+  </form>
   <ul class="sidebar-nav">
-    <li><a href="index.html" class="">About</a></li>
+    <li><a href="index.html">About</a></li>
     <li><a href="research.html" class="active">Research</a></li>
-    <li><a href="publications.html" class="">Publications</a></li>
+    <li><a href="publications.html">Publications</a></li>
   </ul>
-
 </aside>
 
 <div class="main">
   <main class="content">
     <h1>Research</h1>
+    <h2>Invited Talks</h2>
 
-    <p>
-      Under construction.
-    </p>
+    <div class="talk-list" role="region" aria-label="Invited talks">
+      <ul>
+        <li>
+          <span class="talk-title">An information-theoretic principle of emergent 1-form symmetries</span>
+          <span class="talk-date">April 2026</span>
+          <span class="talk-venue">CMT Kids Seminar, Harvard University, USA</span>
+        </li>
+        <li>
+          <span class="talk-title">Computational protection in quantum phases of matter</span>
+          <span class="talk-date">Mar. 2026</span>
+          <span class="talk-venue">Focus session: Quantum Matter and Information, APS March 2026, Denver, USA</span>
+        </li>
+        <li>
+          <span class="talk-title">An information-theoretic principle of emergent 1-form symmetries</span>
+          <span class="talk-date">Feb. 2026</span>
+          <span class="talk-venue">Brandeis Quantum/Gravity seminar, Brandeis University, USA</span>
+        </li>
+        <li>
+          <span class="talk-title">Efficient digital preparation of critical quantum states from universal cooling dynamics</span>
+          <span class="talk-date">Jan. 2026</span>
+          <span class="talk-venue">CUA retreat, MIT-Harvard Center for Ultra-cold Atoms, USA</span>
+        </li>
+        <li>
+          <span class="talk-title">Simulating String-Net States and Anyons on a Digital Quantum Computer</span>
+          <span class="talk-date">Mar. 2025</span>
+          <span class="talk-venue">Invited session: Anyon Interferometry in Atomic and Superconducting Quantum Processors, APS Joint March and April Meeting 2025, Anaheim, USA</span>
+        </li>
+        <li>
+          <span class="talk-title">Simulating 2D and 3D topological quantum phase transitions on a digital quantum computer</span>
+          <span class="talk-date">Oct. 2024</span>
+          <span class="talk-venue">ITAMP seminar, Harvard University, USA</span>
+        </li>
+        <li>
+          <span class="talk-title">Model-independent learning of quantum phases of matter with quantum convolutional neural networks</span>
+          <span class="talk-date">Dec. 2023</span>
+          <span class="talk-venue">QML seminar, Centre for Quantum Technologies, National University of Singapore</span>
+        </li>
+        <li>
+          <span class="talk-title">Realizing 2D topologically ordered states and their phase transitions in a programmable quantum processor</span>
+          <span class="talk-date">Dec. 2023</span>
+          <span class="talk-venue">Quantum Information Group seminar, Massachusetts Institute of Technology, USA</span>
+        </li>
+        <li>
+          <span class="talk-title">Topological quantum phase transitions in exact two-dimensional isometric tensor networks</span>
+          <span class="talk-date">Dec. 2023</span>
+          <span class="talk-venue">MLI seminar, Perimeter Institute for Theoretical Physics, Waterloo, Canada</span>
+        </li>
+        <li>
+          <span class="talk-title">Dissipative phases of matter and passive quantum error correction</span>
+          <span class="talk-date">Nov. 2023</span>
+          <span class="talk-venue">CMT seminar, Max Planck Institute of Quantum Optics, Munich, Germany</span>
+        </li>
+        <li>
+          <span class="talk-title">Dissipative phases of matter and passive quantum error correction</span>
+          <span class="talk-date">Oct. 2023</span>
+          <span class="talk-venue">CMT seminar, University of California, Los Angeles, USA</span>
+        </li>
+        <li>
+          <span class="talk-title">Model-independent learning of quantum phases of matter with quantum convolutional neural networks</span>
+          <span class="talk-date">Feb. 2023</span>
+          <span class="talk-venue">CERN Quantum Technology Initiative, CERN</span>
+        </li>
+        <li>
+          <span class="talk-title">Realizing and recognizing exotic quantum phases of matter on a digital quantum computer</span>
+          <span class="talk-date">Jan. 2023</span>
+          <span class="talk-venue">Sun Yat-sen University, Guangdong, China</span>
+        </li>
+        <li>
+          <span class="talk-title">Exploiting quantum machine learning using classical and quantum data</span>
+          <span class="talk-date">Aug. 2022</span>
+          <span class="talk-venue">Laboratoire de Physique et Modélisation des Milieux Condensés, Grenoble, France</span>
+        </li>
+        <li>
+          <span class="talk-title">Realizing abelian and non-abelian topologically ordered states on a near-term quantum processor</span>
+          <span class="talk-date">Aug. 2022</span>
+          <span class="talk-venue">Journées de la Matière Condensée 2022, Lyon, France</span>
+        </li>
+        <li>
+          <span class="talk-title">Candidate for a passively-protected quantum memory in two dimensions</span>
+          <span class="talk-date">Jun. 2022</span>
+          <span class="talk-venue">Open System Control of Atomic and Photonic Matter (SFB/TR185), Bad Honnef, Germany</span>
+        </li>
+        <li>
+          <span class="talk-title">Topologically ordered systems on the digital quantum processor</span>
+          <span class="talk-date">Oct. 2021</span>
+          <span class="talk-venue">DPG Annual Meeting focus session SKM 2021</span>
+        </li>
+        <li>
+          <span class="talk-title">Realizing topologically ordered states on a quantum processor</span>
+          <span class="talk-date">Sept. 2021</span>
+          <span class="talk-venue">FOR1807 International Conference (DPG), Göttingen, Germany</span>
+        </li>
+        <li>
+          <span class="talk-title">Transitions in synchronization states of model cilia by basal-connection coupling</span>
+          <span class="talk-date">June 2018</span>
+          <span class="talk-venue">School of Mathematics and Statistics, the University of Melbourne</span>
+        </li>
+        <li>
+          <span class="talk-title">Transitions in synchronization states of model cilia by basal-connection coupling</span>
+          <span class="talk-date">Jan. 2019</span>
+          <span class="talk-venue">Department of Physics, the University of Warwick</span>
+        </li>
+      </ul>
+    </div>
   </main>
 </div>
 
@@ -53,19 +162,19 @@ if (input) {
       e.preventDefault();
       const q = input.value.trim().toLowerCase();
       if (!q) return;
-      if (q.includes('research')) window.location.href = 'research.html';
+      if (q.includes('research') || q.includes('talk')) window.location.href = 'research.html';
       else if (q.includes('publication') || q.includes('paper')) window.location.href = 'publications.html';
       else if (q.includes('about') || q.includes('bio') || q.includes('contact')) window.location.href = 'index.html';
       else {
         const el = Array.from(document.querySelectorAll('main *')).find(
           x => x.children.length === 0 && x.textContent.toLowerCase().includes(q)
         );
-        if (el) {
-          el.scrollIntoView({behavior:'smooth', block:'center'});
-        }
+        if (el) el.scrollIntoView({behavior:'smooth', block:'center'});
       }
     }
   });
 }
 </script>
-</body></html>
+
+</body>
+</html>
